@@ -1,4 +1,4 @@
-/// <reference path="../monaco-0.27.0.d.ts" />
+/// <reference path="monaco-0.27.0.d.ts" />
 declare type None = null | undefined;
 declare type CompilerOptions = monaco.languages.typescript.CompilerOptions;
 declare type ITextModel = monaco.editor.ITextModel;

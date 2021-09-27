@@ -1,6 +1,6 @@
 {
-    "include": [
-        "*.ts"
+    "files": [
+        "src/index.ts"
     ],
     "compilerOptions": {
         "module"  : "ES2020",
@@ -10,7 +10,7 @@
         "noImplicitOverride" : true,
         
         "target"     : "ES2020",
-        "outDir"     : "dist",
+        "outDir"     : ".",
         "sourceMap"  : true,
         "declaration": true,
         "declarationMap": true
