@@ -1,4 +1,4 @@
 
-./demo
-./src
-./tsconfig.json
+/demo
+/src
+/tsconfig.json
