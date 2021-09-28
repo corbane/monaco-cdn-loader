@@ -233,7 +233,7 @@ function fromExtenstion (path: string, defaultLanguage: None|string = "Text")
     const i = path.lastIndexOf ('.')
     if (i < 0) return defaultLanguage
     const lang = extensions[path.substring (i)]
-    return lang || defaultLanguage
+    return lang.toLowerCase () || defaultLanguage
 }
 
 function fromShebang (code: string, defaultLanguage: None|string = "Text")

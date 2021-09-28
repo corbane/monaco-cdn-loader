@@ -1,6 +1,6 @@
 //@ts-check
 
-import * as Monaco from "../dist/index.js"
+import * as Monaco from "../index.js"
 import * as Dat from "./libs/dat.gui.module.js"
 
 document.addEventListener ("DOMContentLoaded", () =>
