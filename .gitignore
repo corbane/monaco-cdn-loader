@@ -6,7 +6,3 @@
 /**/node_modules
 /**/.out
 /**/.dist
-
-/demos/**/*.js
-/demos/**/*.js.map
-!/demos/**/rollup.config.js

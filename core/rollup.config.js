@@ -23,11 +23,13 @@ const options = [
     {
         input: "../dist/dts/0-index.d.ts",
         output: {
-            file   : "../dist/index.d.ts",
+            file   : "../dist/core.d.ts",
             format : "esm"
         },
         plugins: [
-            dts ()
+            dts ({
+                respectExternal: true
+            })
         ]
     }
 ]
