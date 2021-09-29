@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "monaco-cdn-loader": "github:corbane/monaco-cdn-loader#2.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
+}

@@ -1,0 +1,3 @@
+workspaces:
+  - monaco-cdn-loader
+  - monaco-readonly-ranges
