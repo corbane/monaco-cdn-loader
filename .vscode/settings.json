@@ -1,11 +1,11 @@
 {
     "files.exclude": {
-        ".gitignore": false,
-        "**/.git": false,
-        "**/.out": false,
-        "**/node_modules": false,
-        "dist": false,
-        "demos/**/*.js": false,
-        "demos/**/*.js.map": false
+        ".gitignore": true,
+        "**/.git": true,
+        "**/.out": true,
+        "**/node_modules": true,
+        "dist": true,
+        "demos/**/*.js": true,
+        "demos/**/*.js.map": true
     }
 }

@@ -51,6 +51,7 @@ class View
         guiContainer.style.position   = "relative"
         gui.domElement.style.position = "absolute"
         gui.domElement.style.bottom   = "20px" // 20px is the height of the close buttom.
+        gui.domElement.style.right    = "0"
 
         document.body.appendChild (guiContainer.appendChild (gui.domElement))
     }

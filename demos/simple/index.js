@@ -1,3 +1,32 @@
+/*/
+    # CHANGES
+
+    ## 2.1.0 (27.09.2021)
+      - append Promise support
+      - remove Workspace class
+      - bug with "globalThis.isInitialized" inside "initialize" function
+    ## 2.0.0 (14.09.2021)
+      - update to monaco-0.27.0
+      - move "MonacoEditor.initialize" to module function "initialize"
+      - remove "MonacoEditor" and feature support
+      - append Workspace class
+
+    ## 1.1.0 (07.08.2021)
+    - update to monaco-0.26.1
+    
+    ## 1.0.0 (21.04.2021)
+
+
+    # USSUES
+
+    - Cannot change the locale after the initialization (https://github.com/microsoft/monaco-editor/issues/2673)
+    - Auto size not good if the model is empty: "Error: Cannot read properties of null (reading 'clearRect')"
+    - With JsDelivr, browser cannot load the source from source-map
+
+    # REMARKS
+
+    Malgrés tout mes éfforts, je n'ais pas été capable de charger monaco via un CDN autrement qu'en global.
+/*/
 const IS_INITIALIZED = Symbol("monaco-cdn-loader-status");
 globalThis[IS_INITIALIZED] = false;
 function initialize(base, version, local) {
@@ -18,11 +47,13 @@ function initialize(base, version, local) {
     const href = `${base}@${version}/min/vs`;
     if (globalThis.require == null) {
         globalThis.require = {
+            // @ts-ignore
             baseUrl: href,
             paths: { vs: href }
         };
         if (local) {
             globalThis.require["vs/nls"] = { availableLanguages: { '*': local } };
+            //globalThis.require["vs/nls"] = { availableLanguages: { '*': local } }
             local = '.' + local;
         }
     }
@@ -40,7 +71,7 @@ function initialize(base, version, local) {
         style.rel = "stylesheet";
         style.href = href;
         if (dataName)
-            style.dataset.name = dataName;
+            style.dataset.name = dataName; // <------
         _appendRessource(style);
     }
     function _injectScript(src) {
@@ -63,6 +94,12 @@ function initialize(base, version, local) {
         }
     }
 }
+
+/*/
+    Utility class to store "monaco.editor.ITextModel" objects.
+
+    Currently this class encapsulates a "Map" type only to automate the creation of "monaco.editor.ITextModel" objects.
+/*/
 class Workspace {
     constructor() {
         this._models = new Map();
@@ -122,6 +159,11 @@ class Workspace {
     [Symbol.iterator]() { return this._models[Symbol.iterator](); }
     get [Symbol.toStringTag]() { return this[Symbol.toStringTag]; }
 }
+/*/
+    Detect programming languages from extension or shebang
+
+    Data converted from https://github.com/blakeembrey/node-language-detect/blob/master/vendor/
+/*/
 function fromExtenstion(path, defaultLanguage = "Text") {
     const i = path.lastIndexOf('.');
     if (i < 0)
@@ -130,6 +172,7 @@ function fromExtenstion(path, defaultLanguage = "Text") {
     return lang.toLowerCase() || defaultLanguage;
 }
 const extensions = {
+    /* Extensions         | Languages */
     ".abap": "ABAP",
     ".asc": "Public Key",
     ".ash": "AGS Script",

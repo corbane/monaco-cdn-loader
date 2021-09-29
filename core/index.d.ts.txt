@@ -1,2 +1,2 @@
 /// <reference path="./monaco.d.ts" />
-/// <reference path="./core.d.ts" />
+export * from "./core"

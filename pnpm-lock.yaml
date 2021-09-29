@@ -19,12 +19,12 @@ importers:
     specifiers:
       '@rollup/plugin-node-resolve': ^13.0.5
       '@rollup/plugin-typescript': ^8.2.5
-      monaco-cdn-loader: https://github.com/corbane/monaco-cdn-loader/releases/download/2.1.0/monaco-cdn-loader-2.1.0.tgz
+      monaco-cdn-loader: ../../dist/monaco-cdn-loader-2.1.0.tgz
       rollup: ^2.57.0
       tslib: ^2.3.1
       typescript: ^4.4.3
     dependencies:
-      monaco-cdn-loader: '@github.com/corbane/monaco-cdn-loader/releases/download/2.1.0/monaco-cdn-loader-2.1.0.tgz'
+      monaco-cdn-loader: file:dist/monaco-cdn-loader-2.1.0.tgz
     devDependencies:
       '@rollup/plugin-node-resolve': 13.0.5_rollup@2.57.0
       '@rollup/plugin-typescript': 8.2.5_283b0408a190511f1240c12469d64cd5
@@ -36,12 +36,12 @@ importers:
     specifiers:
       '@rollup/plugin-node-resolve': ^13.0.5
       '@rollup/plugin-typescript': ^8.2.5
-      monaco-cdn-loader: https://github.com/corbane/monaco-cdn-loader/releases/download/2.1.0/monaco-cdn-loader-2.1.0.tgz
+      monaco-cdn-loader: ../../dist/monaco-cdn-loader-2.1.0.tgz
       rollup: ^2.57.0
       tslib: ^2.3.1
       typescript: ^4.4.3
     dependencies:
-      monaco-cdn-loader: '@github.com/corbane/monaco-cdn-loader/releases/download/2.1.0/monaco-cdn-loader-2.1.0.tgz'
+      monaco-cdn-loader: file:dist/monaco-cdn-loader-2.1.0.tgz
     devDependencies:
       '@rollup/plugin-node-resolve': 13.0.5_rollup@2.57.0
       '@rollup/plugin-typescript': 8.2.5_283b0408a190511f1240c12469d64cd5
@@ -288,8 +288,8 @@ packages:
     hasBin: true
     dev: true
 
-  '@github.com/corbane/monaco-cdn-loader/releases/download/2.1.0/monaco-cdn-loader-2.1.0.tgz':
-    resolution: {tarball: https://github.com/corbane/monaco-cdn-loader/releases/download/2.1.0/monaco-cdn-loader-2.1.0.tgz}
+  file:dist/monaco-cdn-loader-2.1.0.tgz:
+    resolution: {integrity: sha512-oXQuxibXt5etWXla68L4YoveJA49y5OtDx3fC33+4bsZXOQUBpjmfzxBXe5zsZO7OcnPEVTOmsr1o/lYNBe3ww==, tarball: file:dist/monaco-cdn-loader-2.1.0.tgz}
     name: monaco-cdn-loader
     version: 2.1.0
     dev: false

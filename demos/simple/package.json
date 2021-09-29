@@ -7,6 +7,6 @@
     "typescript": "^4.4.3"
   },
   "dependencies": {
-    "monaco-cdn-loader": "https://github.com/corbane/monaco-cdn-loader/releases/download/2.1.0/monaco-cdn-loader-2.1.0.tgz"
+    "monaco-cdn-loader": "../../dist/monaco-cdn-loader-2.1.0.tgz"
   }
 }
