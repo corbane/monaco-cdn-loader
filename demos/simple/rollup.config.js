@@ -5,7 +5,7 @@ import { nodeResolve as RollupResolve } from "@rollup/plugin-node-resolve"
 
 /** @type {import ("rollup").RollupOptions} RollupOptions */
 const options = {
-    input: "index.js",
+    input: "index.ts",
     plugins: [
         RollupTs ({ tsconfig: "tsconfig.json" }),
         RollupResolve ({ extensions: ["js", "ts"] }),
