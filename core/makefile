@@ -1,6 +1,3 @@
 
-build: .out/index.js
-
-.out/%.js: %.ts
-	tsc -P .
+build:
 	rollup -c

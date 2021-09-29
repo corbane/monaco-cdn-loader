@@ -7,7 +7,7 @@ install-online:
 
 build:
 	@make -C core build
-	@make -C demos/simple build
+	@make -C demos/simple build 
 	@make -C demos/default build
 	
 pack:

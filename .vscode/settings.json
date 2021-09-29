@@ -1,7 +1,7 @@
 {
     "files.exclude": {
-        "**/.git": true,
-        "**/.out": true,
-        "**/node_modules": true
+        "**/.git": false,
+        "**/.out": false,
+        "**/node_modules": false
     }
 }
