@@ -1,0 +1,12 @@
+
+/vendors.md
+
+/dist
+/out
+/**/node_modules
+/**/.out
+/**/.dist
+
+/demos/**/*.js
+/demos/**/*.js.map
+!/demos/**/rollup.config.js

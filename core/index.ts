@@ -1,5 +1,4 @@
-
-/// <reference path="../monaco-0.27.0.d.ts" />
+/// <reference path="./monaco-0.27.0.d.ts" />
 
 type None = null|undefined
 type CompilerOptions = monaco.languages.typescript.CompilerOptions

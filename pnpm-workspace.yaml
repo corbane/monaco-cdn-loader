@@ -1,3 +1,4 @@
 workspaces:
-  - monaco-cdn-loader
-  - monaco-readonly-ranges
+  - core
+  - demos/simple
+  - demos/default
