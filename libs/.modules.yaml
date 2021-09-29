@@ -1,0 +1,21 @@
+hoistPattern:
+  - '*'
+hoistedDependencies: {}
+included:
+  dependencies: true
+  devDependencies: true
+  optionalDependencies: true
+layoutVersion: 5
+packageManager: pnpm@6.16.0
+pendingBuilds: []
+prunedAt: Wed, 29 Sep 2021 19:25:41 GMT
+publicHoistPattern:
+  - '*types*'
+  - '*eslint*'
+  - '@prettier/plugin-*'
+  - '*prettier-plugin-*'
+registries:
+  default: https://registry.npmjs.org/
+skipped: []
+storeDir: E:\.pnpm-store\v3
+virtualStoreDir: E:\Projet\Js\monaco\monaco-cdn-loader\node_modules\.pnpm

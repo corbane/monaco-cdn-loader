@@ -9,6 +9,5 @@ Utility to load Monaco editor without module dependencies via CDN.
 ## Install
 
 ```
-pnpm install git://github.com/corbane/monaco-cdn-loader.git
+pnpm install https://github.com/corbane/monaco-cdn-loader/releases/download/2.1.0/monaco-cdn-loader-2.1.0.tgz
 ```
-`pnpm` or` yarn` can be used instead of` pnpm`

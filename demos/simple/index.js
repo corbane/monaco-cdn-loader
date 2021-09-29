@@ -976,7 +976,7 @@ const extensions = {
     ".prw": "xBase"
 };
 
-const filepath = "./index.js";
+const filepath = "./index.ts";
 var content = '';
 initialize()
     .then(() => fetch(filepath)

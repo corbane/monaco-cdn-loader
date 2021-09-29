@@ -1,15 +1,17 @@
 {
-  "name": "monaco-cdn-loader",
-  "version": "2.1.0",
-  "description": "Utility to load Monaco editor without module dependencies via CDN.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "repository": "https://github.com/corbane/monaco-cdn-loader",
-  "author": "jmv <kitjmv@gmail.com>",
-  "license": "LGPL-3.0",
-  "files": [
+  "name"        : "monaco-cdn-loader",
+  "version"     : "2.1.0",
+  "description" : "Utility to load Monaco editor without module dependencies via CDN.",
+  "repository"  : "https://github.com/corbane/monaco-cdn-loader",
+  "author"      : "jmv <kitjmv@gmail.com>",
+  "license"     : "LGPL-3.0",
+
+  "main"  : "dist/index.js",
+  "types" : "dist/index.d.ts",
+  "files" : [
     "dist/index.js",
     "dist/index.d.ts",
-    "core/monaco-0.27.0.d.ts"
+    "dist/monaco.d.ts",
+    "dist/core.d.ts"
   ]
 }

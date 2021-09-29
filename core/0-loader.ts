@@ -1,7 +1,4 @@
 
-type None = null|undefined
-type CompilerOptions = monaco.languages.typescript.CompilerOptions
-
 /*/
     # CHANGES
 
@@ -31,6 +28,9 @@ type CompilerOptions = monaco.languages.typescript.CompilerOptions
 
     Malgrés tout mes éfforts, je n'ais pas été capable de charger monaco via un CDN autrement qu'en global.
 /*/
+
+type None = null|undefined
+type CompilerOptions = monaco.languages.typescript.CompilerOptions
 
 const IS_INITIALIZED = Symbol ("monaco-cdn-loader-status")
 globalThis[IS_INITIALIZED] = false;

@@ -1,4 +1,6 @@
 
+.gitignore
+/**/*.fr.md
 /vendors.md
 
 /dist

@@ -1,5 +1,13 @@
 
-build:
-	rollup -c
-	cp monaco-0.27.0.d.ts ../dist/monaco.d.ts
+build: ../dist/index.js
+
+../dist/%.js: $(wildcard *.ts)
 	cp index.d.ts.txt ../dist/index.d.ts
+	cp monaco.d.ts ../dist/monaco.d.ts
+	rollup -c
+
+watch:
+	cp index.d.ts.txt ../dist/index.d.ts
+	cp monaco.d.ts ../dist/monaco.d.ts
+	rollup -w -c
+	
